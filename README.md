@@ -1,16 +1,37 @@
-# React + Vite
+## Overview
+A full-stack web application to track personal income and expenses, built using the MERN stack (MongoDB, Express.js, React, Node.js).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- Add, view, and delete income and expense transactions
+- Real-time balance calculation (Total Income, Total Expenses, Net Balance)
+- Transaction history with date and category
+- Responsive and user-friendly UI
 
-Currently, two official plugins are available:
+## Tech Stack
+- **Frontend:** React.js
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB Atlas
+- **Tools:** VS Code, GitHub, Postman
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Project Structure
+Personal-Budget-Tracker/
+├── client/          # React frontend
+├── server/          # Node.js + Express backend
+├── models/          # MongoDB schemas
+├── routes/          # API routes
+└── README.md
+## How to Run
+1. Clone the repository
+2. Install dependencies:
+cd server && npm install
+cd client && npm install
+3. Add your MongoDB Atlas connection string in `.env`
+4. Run backend: `npm start` (in server folder)
+5. Run frontend: `npm start` (in client folder)
+6. Open `http://localhost:3000` in your browser
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Learnings
+- Built and connected a full MERN stack application from scratch
+- Managed MongoDB Atlas cloud database connectivity
+- Implemented REST API with Express.js
+- Developed dynamic React components for real-time UI updates
